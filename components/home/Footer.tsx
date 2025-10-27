@@ -42,7 +42,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="/images/uy_logo.svg" 
+                src="/images/uy_logo.png" 
                 alt="UaiYuan - Engenharia Civil" 
                 className="h-8 w-auto"
               />

@@ -24,7 +24,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/images/uy_logo.svg" 
+              src="/images/uy_logo.png" 
               alt="UaiYuan - Engenharia Civil" 
               className="h-8 w-auto"
             />
