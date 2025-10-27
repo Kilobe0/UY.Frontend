@@ -7,21 +7,21 @@ export function ProjectsSection() {
     {
       title: "Ed. Kairós Itaquá",
       category: "Alvenaria Estrutural",
-      image: "/images/projects/kairos-itaqua.jpg",
+      image: "/images/placeholder/tratoresdelado.jpg",
       description: "Edifício residencial com sistema construtivo otimizado",
       link: "/projetos/kairos-itaqua"
     },
     {
       title: "Ed. Residencial Pateo Jacuy",
       category: "Concreto Protendido",
-      image: "/images/projects/pateo-jacuy.jpg",
+      image: "/images/placeholder/vistacelular.jpg",
       description: "Complexo residencial com estrutura protendida",
       link: "/projetos/pateo-jacuy"
     },
     {
       title: "Ed. Residencial Praça das Árvores",
       category: "Alvenaria Estrutural",
-      image: "/images/projects/praca-das-arvores.jpg",
+      image: "/images/placeholder/visaodronehomens.jpg",
       description: "Conjunto de torres residenciais em alvenaria",
       link: "/projetos/praca-das-arvores"
     }

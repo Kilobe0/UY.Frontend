@@ -8,7 +8,7 @@ export function CasesSection() {
   const cases = [
     {
       title: "Praça das Árvores",
-      image: "/images/projects/praca-das-arvores.jpg",
+      image: "/images/placeholder/paisagemengenharia.jpg",
       description: "5 Torres residenciais em Alvenaria Estrutural",
       details: [
         "8 pavimentos por torre",
@@ -19,7 +19,7 @@ export function CasesSection() {
     },
     {
       title: "Pateo Jacuy",
-      image: "/images/projects/pateo-jacuy.jpg",
+      image: "/images/placeholder/homensemobra.jpg",
       description: "Complexo residencial com Concreto Protendido",
       details: [
         "12 pavimentos",
@@ -30,7 +30,7 @@ export function CasesSection() {
     },
     {
       title: "Kairós Botucatu",
-      image: "/images/projects/kairos-botucatu.jpg",
+      image: "/images/placeholder/teladoautocad.jpg",
       description: "Edifício comercial com estrutura mista",
       details: [
         "15 pavimentos",
