@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* Color Palette - Light Mode (Default) */
+:root {
+  /* Purple Palette */
+  --purple-primary: #5d3a8c;
+  --purple-secondary: #8e44ad;
+
+  /* Gray Palette */
+  --gray-dark: #3d3d3d;
+  --gray-light: #eaeaea;
+
+  /* Accent Colors */
+  --turquoise: #1abc9c;
+  --gold: #f39c12;
+
+  /* Semantic Tokens - Light Mode */
+  --background: #ffffff;
+  --foreground: #3d3d3d;
+  --card-bg: #eaeaea;
+  --border-color: #3d3d3d;
+  --primary: #5d3a8c;
+  --primary-hover: #8e44ad;
+  --secondary: #1abc9c;
+  --accent: #f39c12;
+  --text-muted: #6b7280;
+  --text-subtle: #9ca3af;
+}
+
+/* Color Palette - Dark Mode */
+[data-theme="dark"] {
+  /* Purple Palette (slightly lighter for dark mode) */
+  --purple-primary: #6b48a0;
+  --purple-secondary: #a569c8;
+
+  /* Gray Palette (inverted) */
+  --gray-dark: #eaeaea;
+  --gray-light: #2d2d2d;
+
+  /* Accent Colors (maintained) */
+  --turquoise: #1abc9c;
+  --gold: #f39c12;
+
+  /* Semantic Tokens - Dark Mode */
+  --background: #1a1a1a;
+  --foreground: #eaeaea;
+  --card-bg: #2d2d2d;
+  --border-color: #4a4a4a;
+  --primary: #6b48a0;
+  --primary-hover: #a569c8;
+  --secondary: #1abc9c;
+  --accent: #f39c12;
+  --text-muted: #9ca3af;
+  --text-subtle: #6b7280;
+}
+
+/* Tailwind Theme Configuration */
+@theme inline {
+  /* Color System */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card-bg);
+  --color-border: var(--border-color);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--text-muted);
+  --color-subtle: var(--text-subtle);
+
+  /* Purple Base Colors */
+  --color-purple-primary: var(--purple-primary);
+  --color-purple-secondary: var(--purple-secondary);
+
+  /* Gray Base Colors */
+  --color-gray-dark: var(--gray-dark);
+  --color-gray-light: var(--gray-light);
+
+  /* Purple Shades */
+  --color-purple-50: #f4eaff;
+  --color-purple-100: #e0ccff;
+  --color-purple-200: #c9aaff;
+  --color-purple-300: #b088ff;
+  --color-purple-400: #9c6eff;
+  --color-purple-500: #8854e6;
+  --color-purple-600: #6b48a0;
+  --color-purple-700: #5d3a8c;
+  --color-purple-800: #4a2e70;
+  --color-purple-900: #3d255d;
+
+  /* Turquoise Shades */
+  --color-turquoise-50: #e0f7f4;
+  --color-turquoise-100: #b3eae0;
+  --color-turquoise-200: #80dccc;
+  --color-turquoise-300: #4dcdb8;
+  --color-turquoise-400: #26c3a7;
+  --color-turquoise-500: #1abc9c;
+  --color-turquoise-600: #17a58f;
+  --color-turquoise-700: #138e7a;
+  --color-turquoise-800: #0f7866;
+  --color-turquoise-900: #085244;
+
+  /* Gold Shades */
+  --color-gold-50: #fef5e7;
+  --color-gold-100: #fce9c1;
+  --color-gold-200: #fadc98;
+  --color-gold-300: #f9d080;
+  --color-gold-400: #f6c357;
+  --color-gold-500: #f39c12;
+  --color-gold-600: #e68c0f;
+  --color-gold-700: #d67e0c;
+  --color-gold-800: #c67009;
+  --color-gold-900: #b55d04;
+
+  /* Font System */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-raleway);
+  --font-body: var(--font-lato);
+  --font-button: var(--font-nunito);
+
+  /* Typography Scale */
+  --font-size-h1: clamp(2.625rem, 5vw, 3rem);
+  --font-size-h2: clamp(2rem, 3vw, 2.25rem);
+  --font-size-h3: clamp(1.5rem, 2vw, 1.75rem);
+  --font-size-body: clamp(1rem, 1.5vw, 1.125rem);
+  --font-size-button: clamp(0.875rem, 1vw, 1rem);
+}
+
+/* Smooth Transitions for Theme Changes */
+* {
+  transition-property: background-color, border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Base Styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
