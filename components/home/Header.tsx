@@ -1,11 +1,13 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ThemeToggle } from "../theme-toggle";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navigationItems = [
     { label: "Início", href: "/" },
@@ -39,7 +41,11 @@ export function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="font-body text-foreground hover:text-primary transition-colors duration-200"
+                className={`font-body transition-colors duration-200 ${
+                  pathname === item.href 
+                    ? 'text-primary' 
+                    : 'text-foreground hover:text-primary'
+                }`}
               >
                 {item.label}
               </a>
@@ -73,7 +79,11 @@ export function Header() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="font-body text-foreground hover:text-primary transition-colors duration-200 py-2"
+                  className={`font-body transition-colors duration-200 py-2 ${
+                    pathname === item.href 
+                      ? 'text-primary' 
+                      : 'text-foreground hover:text-primary'
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
