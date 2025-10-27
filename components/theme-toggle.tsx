@@ -8,15 +8,15 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="relative h-10 w-10 rounded-lg bg-card text-foreground transition-colors hover:bg-primary-hover hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+      className="relative h-10 w-10 rounded-lg bg-card text-foreground transition-colors hover:bg-primary-hover hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background flex items-center justify-center"
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
       type="button"
     >
       <span className="sr-only">Toggle theme</span>
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="relative h-5 w-5">
         {/* Sun Icon - Light Mode */}
         <svg
-          className={`h-5 w-5 transition-opacity duration-200 ${
+          className={`absolute inset-0 h-5 w-5 transition-opacity duration-200 ${
             theme === "light" ? "opacity-100 rotate-0" : "opacity-0 rotate-90"
           }`}
           fill="none"
@@ -33,7 +33,7 @@ export function ThemeToggle() {
 
         {/* Moon Icon - Dark Mode */}
         <svg
-          className={`h-5 w-5 transition-opacity duration-200 absolute inset-0 ${
+          className={`absolute inset-0 h-5 w-5 transition-opacity duration-200 ${
             theme === "dark" ? "opacity-100 rotate-0" : "opacity-0 -rotate-90"
           }`}
           fill="none"
