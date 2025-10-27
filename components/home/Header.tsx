@@ -10,11 +10,11 @@ export function Header() {
   const navigationItems = [
     { label: "Início", href: "/" },
     { label: "A Empresa", href: "/a-empresa" },
-    { label: "Soluções", href: "#services" },
-    { label: "Projetos", href: "#projects" },
-    { label: "Cases", href: "#cases" },
-    { label: "Blog", href: "#blog" },
-    { label: "Contato", href: "#contact" },
+    { label: "Soluções", href: "/solucoes" },
+    { label: "Projetos", href: "/projetos" },
+    { label: "Cases", href: "/cases" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contato", href: "/contato" },
   ];
 
   return (
