@@ -8,8 +8,8 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigationItems = [
-    { label: "Início", href: "#home" },
-    { label: "A Empresa", href: "#about" },
+    { label: "Início", href: "/" },
+    { label: "A Empresa", href: "/a-empresa" },
     { label: "Soluções", href: "#services" },
     { label: "Projetos", href: "#projects" },
     { label: "Cases", href: "#cases" },
