@@ -46,7 +46,7 @@ export function Footer() {
                 alt="UaiYuan - Engenharia Civil" 
                 className="h-8 w-auto"
               />
-              <span className="font-heading text-primary font-bold text-xl">
+              <span className="font-heading text-accent font-bold text-xl">
                 UaiYuan
               </span>
             </div>
@@ -83,7 +83,7 @@ export function Footer() {
           
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading text-lg font-semibold text-white mb-6">
+            <h3 className="font-heading text-lg font-semibold text-gray-light mb-6">
               Links Rápidos
             </h3>
             <ul className="space-y-3">
@@ -102,7 +102,7 @@ export function Footer() {
           
           {/* Social Media */}
           <div>
-            <h3 className="font-heading text-lg font-semibold text-white mb-6">
+            <h3 className="font-heading text-lg font-semibold text-gray-light mb-6">
               Redes Sociais
             </h3>
             <div className="flex space-x-4">
@@ -114,7 +114,7 @@ export function Footer() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-3 bg-card border border-border rounded-lg text-gray-light/80 ${social.color} transition-all duration-200 hover:scale-110`}
+                    className={`p-3 bg-card border border-border rounded-lg text-foreground ${social.color} transition-all duration-200 hover:scale-110`}
                     title={social.name}
                   >
                     <IconComponent className="h-5 w-5" />
@@ -125,7 +125,7 @@ export function Footer() {
             
             {/* Newsletter */}
             <div className="mt-8">
-              <h4 className="font-heading text-sm font-semibold text-white mb-3">
+              <h4 className="font-heading text-sm font-semibold text-gray-light mb-3">
                 Newsletter
               </h4>
               <p className="font-body text-gray-light/80 text-sm mb-4">
@@ -135,7 +135,7 @@ export function Footer() {
                 <input
                   type="email"
                   placeholder="Seu e-mail"
-                  className="flex-1 px-3 py-2 bg-card border border-border rounded-l-lg text-white placeholder-gray-light/50 focus:outline-none focus:border-primary"
+                  className="flex-1 px-3 py-2 bg-card border border-border rounded-l-lg text-foreground placeholder-card-text focus:outline-none focus:border-primary"
                 />
                 <button className="px-4 py-2 bg-primary hover:bg-primary-hover text-white rounded-r-lg transition-colors">
                   <Mail className="h-4 w-4" />
