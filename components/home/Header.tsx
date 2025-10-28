@@ -28,9 +28,9 @@ export function Header() {
             <img 
               src="/images/uy_logo.png" 
               alt="UaiYuan - Engenharia Civil" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
-            <span className="font-heading text-primary font-bold text-xl">
+            <span className="font-heading text-accent font-bold text-xl">
               UaiYuan
             </span>
           </div>
